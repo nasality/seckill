@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bytedance.mapper.SeckillOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.bytedance.pojo.SeckillGoods">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="order_id" property="orderId"/>
+        <result column="goods_id" property="goodsId"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,order_id,goods_id
+    </sql>
+</mapper>
