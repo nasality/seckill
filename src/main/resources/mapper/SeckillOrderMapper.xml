@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bytedance.mapper.SeckillOrderMapper">
+<mapper namespace="com.itheida.mapper.SeckillOrderMapper">
 
-    <resultMap id="BaseResultMap" type="com.bytedance.pojo.SeckillGoods">
+    <resultMap id="BaseResultMap" type="com.itheida.pojo.SeckillGoods">
         <id column="id" property="id"/>
         <result column="user_id" property="userId"/>
         <result column="order_id" property="orderId"/>

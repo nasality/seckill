@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bytedance.mapper.GoodsMapper">
+<mapper namespace="com.itheida.mapper.GoodsMapper">
 <!--    通用查询映射结果-->
-    <resultMap id="BaseResultMap" type="com.bytedance.pojo.Goods">
+    <resultMap id="BaseResultMap" type="com.itheida.pojo.Goods">
         <id column="goods_name" property="goodsName"/>
         <result column="goods_title" property="goodsTitle"/>
         <result column="goods_img" property="goodsImg"/>
@@ -18,7 +18,7 @@
     </sql>
 
 <!--    获取秒杀商品列表-->
-    <select id="findGoodsVo" resultType="com.bytedance.vo.GoodsVo">
+    <select id="findGoodsVo" resultType="com.itheida.vo.GoodsVo">
         select
         g.id,
         g.goods_name,
@@ -36,7 +36,7 @@
         left join t_seckill_goods as sg on g.id = sg.goods_id
     </select>
 
-    <select id="findGoodsVoByGoodsId" resultType="com.bytedance.vo.GoodsVo">
+    <select id="findGoodsVoByGoodsId" resultType="com.itheida.vo.GoodsVo">
         select
         g.id,
         g.goods_name,
